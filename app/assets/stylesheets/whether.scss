@@ -1,0 +1,13 @@
+@import "compass/css3";
+
+body {
+  padding: 20px;
+  font: 14px Helvetica, Arial, sans-serif;
+
+  a {
+    color: #00B7FF;
+    @include text-shadow(rgba(blue, 0.2) 1px 1px 0);
+  }
+
+
+}

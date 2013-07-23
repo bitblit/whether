@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<div>
+    <p>
+    <ul>
+        {{^user}}
+            <li><a href="/login">Login/Register</a></li>
+        {{/user}}
+        {{#user}}
+            <li><a href="/logout">Logout {{ user.email }}    {{email}}</a> </li>
+        {{/user}}
+    </ul>
+    </p>
+</div>
+
+<div>
+      Location : {{location}} <br />
+      Temp : {{temp_f}}
+</div>
+
+<div>
+    <h1>Select Place</h1>
+    <form action="/compare" method="post">
+        City 1 <input type="text" name="city1" value="" /> <br />
+        City 2 <input type="text" name="city2" value="" /> <br />
+        <input type="submit" />
+    </form>
+</div>
+
+
+

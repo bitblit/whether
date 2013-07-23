@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Mocha/Phantom Tests</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+<div id="mocha"></div>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script src="../node_modules/chai/chai.js"></script>
+<script>
+    mocha.ui('bdd');
+    mocha.reporter('html');
+
+    expect = chai.expect;
+</script>
+<script src="integration-lib/passing.js"></script>
+<script>
+    if (window.mochaPhantomJS) {
+        console.log("Running phantom!");
+        mochaPhantomJS.run();
+    } else {
+        console.log("Running normal!");
+        mocha.run();
+    }
+</script>
+</body>
+</html>
+
+<!--
+Reference
+http://net.tutsplus.com/tutorials/javascript-ajax/testing-javascript-with-phantomjs/
+-->
+
