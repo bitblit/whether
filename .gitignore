@@ -3,3 +3,4 @@ target
 *.iml
 server.log
 *.iws
+node_modules
