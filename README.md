@@ -39,7 +39,7 @@ Which should give you Redress running at [http://localhost:3000](http://localhos
 Test It
 -------
 
-For testing we are using [Mocha](http://visionmedia.github.io/mocha/) with help on mocking and stubbing from [Sinon](http://sinonjs.org/docs/). To run the tests, simply call:
+For testing we are using [Mocha](http://mochajs.org/) with help on mocking and stubbing from [Sinon](http://sinonjs.org/docs/). To run the tests, simply call:
 
 `grunt` or `grunt test`
 
