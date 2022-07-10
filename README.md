@@ -3,6 +3,17 @@ Whether
 
 An app for comparing different locations weather
 
+IMPORTANT NOTE
+--------------
+
+On 2022-07-10 I determined that I would not bother porting forward this code; It was never really complete, and if
+I were to need it today I'd probably scrap the whole thing and move to an Angular app - no real need to do all this
+manual labor on the front end any more.  I'm marking it ReadOnly in Github and leaving it there for historical
+interest only.  If I ever need it, I'll resurrect it from cold storage and really only keep the weather underground
+lookup pieces.
+
+CAW
+
 Development Environment Setup
 -----------------------------
 
